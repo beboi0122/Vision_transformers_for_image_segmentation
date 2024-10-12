@@ -1,4 +1,6 @@
-data/*
+project/data/*
+project/kaggle.json
 .idea
 .ipynb_checkpoints
 .DS_Store
+
