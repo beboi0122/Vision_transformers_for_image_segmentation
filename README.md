@@ -49,4 +49,4 @@ To run the docker image run the following command:
 docker run -p 8888:8888 -it vision-transformers
 ```
 
-After running the docker image, you can open the jupiter notebook on http://127.0.0.1:8888/tree and run the contents.
+After running the docker image, you can open the jupiter notebook on http://127.0.0.1:8888/notebooks/main.ipynb and run the contents.
