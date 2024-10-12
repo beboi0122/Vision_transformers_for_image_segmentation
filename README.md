@@ -16,7 +16,7 @@ For the project, we use a dataset of road layouts from kaggle.
 
 #### Files in repository
 
-- data
+- project
   - requirements.txt: list of python packages needed for the project
   - tmp.ipynb: jupiter notebook that downloads, analyses and prepares the data
 - Dockerfile: For containerization
