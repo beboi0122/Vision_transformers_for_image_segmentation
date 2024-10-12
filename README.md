@@ -6,8 +6,8 @@ Q épület
 
 #### Members
 
-Jurásek Jónás PH4QFK
-Pánczél Bence GZI387
+- Jurásek Jónás PH4QFK
+- Pánczél Bence GZI387
 
 #### Project Description
 
@@ -18,7 +18,8 @@ For the project, we use a dataset of road layouts from kaggle.
 
 - project
   - requirements.txt: list of python packages needed for the project
-  - tmp.ipynb: jupiter notebook that downloads, analyses and prepares the data
+  - main.ipynb: jupiter notebook that downloads, analyses and prepares the data
+  - PUT_KAGGLE_JSON_HERE: put your own kaggle.json in this folder
 - Dockerfile: For containerization
 - README.md: project description
 
