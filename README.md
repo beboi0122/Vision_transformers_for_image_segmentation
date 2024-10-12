@@ -35,7 +35,7 @@ Prerequisites of running:
 - docker
 - kaggle registration
 
-Before running the docker image, place your kaggle.json file in the data folder.
+Before running the docker image, place your kaggle.json file in the project folder.
 
 To build the docker image run the following command:
 
