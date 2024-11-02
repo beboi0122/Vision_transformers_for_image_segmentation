@@ -3,4 +3,8 @@ project/kaggle.json
 .idea
 .ipynb_checkpoints
 .DS_Store
+project/wandb
+project/road-segmentation
+project/__pycache__
+
 
