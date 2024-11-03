@@ -1,1 +1,0 @@
-./road-segmentation/n2mtp1jz/checkpoints/epoch=0-step=1121.ckpt

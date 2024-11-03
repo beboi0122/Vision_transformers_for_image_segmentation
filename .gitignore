@@ -6,5 +6,6 @@ project/kaggle.json
 project/wandb
 project/road-segmentation
 project/__pycache__
+project/models/DeepLabV3_best_model.cpkt
 
 
