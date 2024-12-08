@@ -9,3 +9,5 @@ project/__pycache__
 project/models/DeepLabV3_best_model.cpkt
 project/models/UNET2D_best_model.cpkt
 
+
+*.pyc
