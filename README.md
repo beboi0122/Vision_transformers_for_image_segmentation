@@ -33,12 +33,14 @@ For the project, we use a dataset of road layouts from kaggle.
     - traindata.csv
     - valdata.csv
   - wrapper_modules
+
     - RoadSegmentationModule.py: lightning module for training models
 
-- RoadDataLoader.py: dataloader helper class
-- RoadDataset: dataloader helper class
+  - RoadDataLoader.py: dataloader helper class
+  - RoadDataset: dataloader helper class
+  - loss_and_eval_functions.py: loss and evaluation fuctions
+
 - Documentation.pdf: Documentation
-- loss_and_eval_functions.py: loss and evaluation fuctions
 - Dockerfile: For containerization
 - README.md: project description
 
