@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from RoadDataset import RoadDataset
 
 class RoadDataLoader(pl.LightningDataModule):
-    def __init__(self, metadata, batch_size, num_workers=0, image_size=512):
+    def __init__(self, metadata, batch_size, num_workers=0, image_size=512, eval=False):
         super().__init__()
         self.metadata = metadata
         self.batch_size = batch_size
@@ -24,11 +24,11 @@ class RoadDataLoader(pl.LightningDataModule):
 
     def val_dataloader(self):
         val_dataset = RoadDataset(self.val_data, size=self.image_size)
-        return DataLoader(val_dataset, batch_size=self.batch_size, num_workers=self.num_workers, persistent_workers=self.persistent_workers)
+        return DataLoader(val_dataset, batch_size=self.batch_size, num_workers=self.num_workers, shuffle=False, persistent_workers=self.persistent_workers)
 
     def test_dataloader(self):
         test_dataset = RoadDataset(self.test_data, size=self.image_size)
-        return DataLoader(test_dataset, batch_size=self.batch_size, num_workers=self.num_workers, persistent_workers=self.persistent_workers)
+        return DataLoader(test_dataset, batch_size=self.batch_size, num_workers=self.num_workers, shuffle=False, persistent_workers=self.persistent_workers)
 
 
 
