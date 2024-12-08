@@ -10,10 +10,11 @@ from torchvision.transforms.v2.functional import to_tensor, to_image, to_dtype
 
 
 class RoadDataset(Dataset):
-    def __init__(self, metadata, size=512, train=True):
+    def __init__(self, metadata, size=512, train=True, eval=False):
         self.metadata = metadata
         self.train = train
         self.size = size
+        self.eval = eval
 
     def __len__(self):
         return self.metadata.shape[0]
@@ -57,7 +58,10 @@ class RoadDataset(Dataset):
 
         image = F.normalize(image, mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
 
-        return image, mask
+        if self.eval:
+            return image, mask, self.metadata.iloc[index]["sat_image_path"], index
+        else:
+            return image, mask
 
 
 
